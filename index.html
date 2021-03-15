@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto JS</title>
+    <link rel="stylesheet" href="cotizador.css">
+</head>
+<body>
+    <!-- <h1>Cotizador de seguros con JS de CoderHouse.</h1> -->
+    
+
+    <div class="contenedor">
+        <header>Cotizador de seguro</header>
+        <form action="" id="cotizar-seguro">
+
+            <div class="marca">
+                <label class="labelmarca">Marca:</label>
+                <select id="marca">
+                    <option> -- Seleccione Marca -- </option>
+                </select>
+            </div>
+            <div class="modelo">
+                <label class="labelmodelo">Modelo:</label>
+                <select id="modelo">
+                    <option> -- Seleccione Modelo -- </option>
+                </select>
+            </div>
+            <div class="year">
+                <label for="">Año:</label>
+                <select id="year">
+                    <option value=""> -- Seleccionar --</option>
+                </select>
+            </div>
+            <div class="plan">
+                <h3>Plan:</h3>
+                <!-- <select id="plan">
+                    <option value="bronce" name="tipo">Bronce</option>
+                    <option value="plata" name="tipo">Plata</option>
+                    <option value="oro" name="tipo">Oro</option>
+                </select> -->
+                <label> Bronce</label>
+                    <input type="radio" name="tipo" value="bronce" checked>
+                </label>
+                <label> Plata</label>
+                    <input type="radio" name="tipo" value="plata">
+                </label>
+                <label> Oro</label>
+                    <input type="radio" name="tipo" value="oro">
+                </label>
+            </div>
+            <!-- <div id="resultado"></div> -->
+            <div class="boton">
+                <button type="submit" id="cotizar" value="Cotizar seguro" class="botoncotizar">Cotizar seguro</button>
+            </div>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+
+    <script src="jquerymin.js"></script>
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
